@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+<title>Search Customer</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>🔍 Search Customer</h2>
+
+    <input
+        type="number"
+        id="searchId"
+        placeholder="Enter Customer ID"
+    >
+    <input
+    type="text"
+    id="searchName"
+    placeholder="Enter Customer Name"
+>
+
+<button onclick="searchByName()">
+    Search by Name
+</button>
+
+    <button onclick="searchInsurance()">
+        Search
+    </button>
+
+    <button onclick="window.location.href='home.html'">
+        Back
+    </button>
+
+    <hr>
+
+    <div id="searchResult"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Add Insurance</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>➕ Add Customer Insurance Details</h2>
+
+        <input
+            type="text"
+            id="first_name"
+            placeholder="First Name"
+        >
+
+        <input
+            type="text"
+            id="last_name"
+            placeholder="Last Name"
+        >
+
+        <input
+            type="text"
+            id="phone"
+            placeholder="Phone Number"
+        >
+
+        <input
+            type="email"
+            id="customer_email"
+            placeholder="Customer Email"
+        >
+
+        <input
+            type="text"
+            id="policy_name"
+            placeholder="Policy Name"
+        >
+
+        <input
+            type="text"
+            id="policy_type"
+            placeholder="Policy Type"
+        >
+
+        <input
+            type="number"
+            id="premium"
+            placeholder="Premium Amount"
+        >
+
+        <input
+            type="number"
+            id="coverage_amount"
+            placeholder="Coverage Amount"
+        >
+        <hr>
+
+<h2>Customer Records</h2>
+
+<div id="result"></div>
+
+        <button onclick="addInsurance()">
+            Save Details
+        </button>
+
+        <button
+            onclick="window.location.href='home.html'"
+            class="back-btn"
+        >
+            Back
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
