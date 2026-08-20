@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Search Customer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="form-page">
+
+        <div class="form-container">
+
+            <div class="form-header">
+
+                <h1>
+                    🔍 Search Customer
+                </h1>
+
+                <p>
+                    Find customer details using Customer ID
+                </p>
+
+            </div>
+
+
+            <div class="search-box">
+
+               <input
+    type="text"
+    id="searchInput"
+    placeholder="Enter ID, Name, Phone or Email"
+>
+
+<button onclick="searchCustomer()">
+    Search Customer
+</button>
+                </button>
+
+            </div>
+
+
+            <div id="searchResult">
+
+            </div>
+
+
+            <div class="button-group">
+
+                <button
+                    class="back-btn"
+                    onclick="window.location.href='home.html'"
+                >
+                    Back to Dashboard
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

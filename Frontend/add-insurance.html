@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Add Customer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="page-container">
+
+    <div class="form-card">
+
+        <h1 id="formTitle">
+    Add Customer Details
+</h1>
+
+        <div class="form-grid">
+
+            <input
+                type="text"
+                id="first_name"
+                placeholder="First Name"
+            >
+
+            <input
+                type="text"
+                id="last_name"
+                placeholder="Last Name (Optional)"
+            >
+
+           <input
+    type="text"
+    id="phone"
+    placeholder="Phone Number"
+    maxlength="10"
+    oninput="validatePhone(this)"
+>
+
+            <input
+                type="email"
+                id="customer_email"
+                placeholder="Email Address"
+            >
+
+            <select
+                id="policy_name"
+                onchange="setPolicyDetails()"
+            >
+
+                <option value="">
+                    Select Policy
+                </option>
+
+                <option value="Health Secure Basic">
+                    Health Secure Basic
+                </option>
+
+                <option value="Health Secure Premium">
+                    Health Secure Premium
+                </option>
+
+                <option value="Family Protection Plan">
+                    Family Protection Plan
+                </option>
+
+                <option value="Vehicle Shield Plus">
+                    Vehicle Shield Plus
+                </option>
+
+                <option value="Home Safety Gold">
+                    Home Safety Gold
+                </option>
+
+            </select>
+
+            <input
+                type="text"
+                id="policy_type"
+                placeholder="Policy Type"
+                readonly
+            >
+
+            <input
+                type="number"
+                id="premium"
+                placeholder="Premium"
+                readonly
+            >
+
+            <input
+                type="number"
+                id="coverage_amount"
+                placeholder="Coverage Amount"
+                readonly
+            >
+
+        </div>
+
+        <button
+            class="save-btn"
+            onclick="addInsurance()"
+        >
+            Save Customer
+        </button>
+
+    </div>
+
+
+    <div class="table-card">
+
+        <div class="table-header">
+
+            <h2>
+                Customer History
+            </h2>
+
+            <input
+                type="text"
+                placeholder="Search by name..."
+            >
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

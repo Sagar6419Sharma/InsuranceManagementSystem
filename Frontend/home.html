@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Insurance Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>🛡️ INSURE PRO</h2>
+
+        <p>Insurance Management System</p>
+
+        <button onclick="window.location.href='home.html'">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </button>
+
+        <button onclick="window.location.href='add-insurance.html'">
+            <i class="fa-solid fa-user-plus"></i>
+            Add Customer
+        </button>
+
+        <button onclick="window.location.href='search.html'">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search Customer
+        </button>
+
+        <button onclick="window.location.href='policies.html'">
+            <i class="fa-solid fa-shield-halved"></i>
+            Policies
+        </button>
+
+        <button onclick="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </div>
+
+
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <h1>Insurance Dashboard</h1>
+
+        <p>
+            Welcome Admin 👋
+        </p>
+
+
+
+        <!-- DASHBOARD CARDS -->
+
+        <div class="stats">
+
+            <div
+                class="stat-box blue"
+                onclick="window.location.href='add-insurance.html'"
+            >
+
+                <h2>👥</h2>
+
+                <h3>Customers</h3>
+
+                <p>
+                    Manage Customer Records
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="stat-box green"
+                onclick="window.location.href='policies.html'"
+            >
+
+                <h2>🛡️</h2>
+
+                <h3>Policies</h3>
+
+                <p>
+                    View Insurance Plans
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="stat-box orange"
+                onclick="window.location.href='search.html'"
+            >
+
+                <h2>🔍</h2>
+
+                <h3>Search</h3>
+
+                <p>
+                    Search Customer Details
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="stat-box red"
+                onclick="showSecurityInfo()"
+            >
+
+                <h2>🔒</h2>
+
+                <h3>Secure System</h3>
+
+                <p>
+                    Protected Database
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- QUICK ACTIONS -->
+
+        <div class="form-box">
+
+            <h2>
+                Quick Actions
+            </h2>
+
+            <button
+                class="action-btn"
+                onclick="window.location.href='add-insurance.html'"
+            >
+                ➕ Add Customer
+            </button>
+
+            <button
+                class="action-btn"
+                onclick="window.location.href='search.html'"
+            >
+                🔍 Search Customer
+            </button>
+
+            <button
+                class="action-btn"
+                onclick="window.location.href='policies.html'"
+            >
+                🛡️ View Policies
+            </button>
+
+        </div>
+
+
+
+
+
+        <!-- CUSTOMER TABLE -->
+
+        <div class="table-box">
+
+            <h2>
+                Recent Customers
+            </h2>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
